@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body{
+  background-color: rgb(64, 2, 123);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  width: 90vmin;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 16px;
+}
+
+.container .date{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.date input{
+  padding: 4px 8px;
+  border: none;
+  /* border-bottom: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;*/
+  border-radius: 4px; 
+  box-shadow: 0px 2px 7px rgba(205, 154, 252, 0.385);
+  width: 60%;
+  outline: none;
+}
+
+.date button{
+  padding: 8px 16px;
+  border: none;
+  background-color: blueviolet;
+  color: #fff;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.todos {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.todos li{
+  padding: 8px 28px;
+  margin: 16px 0px;
+  border-radius: 4px;
+  background-color: blueviolet;
+  color: #fff;
+  position: relative;
+  transition: all 1s ease-in-out;
+  
+}
+.todos li span{
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#delete{
+  background-color: #ff006a;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+ 
+  color: #fff;
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+#delete:hover{
+  background-color: #b4034d;
+}
+.done{
+  text-decoration: line-through;
+  order: 0;
+  opacity: 50%;
+  order: 1;
+}
+
+.completed{
+  margin-top: auto;
+  margin-left: auto;
+  width: fit-content;
+ 
+  font-size: 12px;
+  background-color: #ff006a;
+  padding: 4px;
+  border-radius: 8px;
+  color: #fff;
+}
